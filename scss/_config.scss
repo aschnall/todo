@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$primary-color: #e2ca82;
+$secondary-color: #46443f;
+$font-stack: 'Crimson Text', serif;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition-easeInOut {
+    transition: all 1s ease-in-out;
+}
+
+@mixin defaultBorder {
+    border: 2px solid #060606;
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 60) {
+        @return #07420759;
+    } @else {
+        @return #F7F3F1;
+    }
+}

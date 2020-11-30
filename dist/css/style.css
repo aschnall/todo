@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e2ca82;
+  font-family: "Crimson Text", serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.main #input {
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 40vw;
+  padding: 10px 20px;
+}
+
+.main #input:focus {
+  outline: none;
+}
+
+.main button {
+  border-radius: 0;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #46443f;
+  color: #F7F3F1;
+  cursor: pointer;
+  border: 2px solid #060606;
+}
+
+.main button:focus {
+  outline: none;
+}
+
+.main li {
+  list-style: none;
+  margin: 0.2rem;
+  padding: 5px;
+  border: 2px solid #060606;
+  background: #46443f;
+  font-size: 1.3rem;
+  color: #F7F3F1;
+}
+
+.main li:hover .delete {
+  display: inline;
+  float: right;
+  cursor: pointer;
+}
+
+.main li input {
+  margin: 3px;
+  cursor: pointer;
+}
+
+.main li .delete {
+  display: none;
+}
+
+.main .strike {
+  text-decoration: line-through;
+  color: #07420759;
+  background-color: #e2ca82;
+  transition: all 1s ease-in-out;
+}
+
+.main .strike span {
+  color: #46443f;
+}
+/*# sourceMappingURL=style.css.map */
